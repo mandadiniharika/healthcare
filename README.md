@@ -71,4 +71,4 @@ The same password applies to the seeded demo doctors.
 8. The patient can then return to the doctor directory and book an available slot.
 
 ## Production next steps
-For a real deployment, add HTTPS, secure cookies/rotating JWTs, rate limiting, email/SMS/WhatsApp provider integration, audit logs, proper role administration, appointment slot locking/transactions, encrypted secrets, backups, monitoring, and healthcare/privacy compliance appropriate to the deployment jurisdiction.
+For a real deployment, add HTTPS, secure cookies/rotating JWTs, rate limiting, email/SMS/WhatsApp provider integration, audit logs, proper role administration, appointment slot locking/transactions, encrypted secrets, backups, monitoring, and healthcare/privacy compliance appropriate to the deployment jurisdiction.!

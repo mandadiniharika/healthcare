@@ -1,3 +1,4 @@
+
 {
   "name": "backend",
   "version": "1.0.0",
@@ -5,7 +6,8 @@
   "scripts": {
     "dev": "nodemon server.js",
     "seed:doctors": "node seedDoctors.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "node --test"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

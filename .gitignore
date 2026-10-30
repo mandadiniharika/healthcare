@@ -1,0 +1,16 @@
+# Node dependencies
+node_modules/
+**/node_modules/
+
+# Environment variables
+.env
+.env.*
+
+# React build files
+frontend/build/
+
+# Logs
+*.log
+
+# Backup lockfile
+frontend/package-lock-old.json

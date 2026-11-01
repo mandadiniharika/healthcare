@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pulsecare-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pulsecare-backend
+  template:
+    metadata:
+      labels:
+        app: pulsecare-backend
+    spec:
+      containers:
+        - name: backend
+          image: healthcare-pulsecare-advanced-backend:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 5000
+          env:
+            - name: PORT
+              value: "5000"
+            - name: MONGODB_URI
+              value: "mongodb://mongodb:27017/healthcare"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: pulsecare-backend
+spec:
+  selector:
+    app: pulsecare-backend
+  ports:
+    - port: 5000
+      targetPort: 5000
+  type: ClusterIP
